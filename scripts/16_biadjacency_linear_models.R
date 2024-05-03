@@ -1,7 +1,4 @@
-
-#library("moonBook")
-#library(TH.data)
-#library("ggiraphExtra")
+#install.packages("tidyverse")
 library(tidyverse)
 source("scripts/src/boostrap_lm_models.R")
 source("scripts/src/get_lm_models.R")

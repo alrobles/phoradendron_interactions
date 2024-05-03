@@ -1,9 +1,6 @@
 library(tidyverse)
 host_sample_df <- read_csv("data/07_phoradendron_host_phy_harmonized.csv")
 
-
-#phoradendron_host <- read_csv("data/07_phoradendron_host_phy_harmonized.csv")
-
 host_sample_taxonomy_df <- host_sample_df %>%
    select(hostOrder, hostFamily, hostGenus)
 host_order_count <- host_sample_taxonomy_df %>% 

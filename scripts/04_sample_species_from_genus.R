@@ -1,8 +1,6 @@
 phoradendron_host_taxonomy <- readr::read_csv("data/02_phoradendron_host_harmonized.csv")
 
 
-options(ENTREZ_KEY = "f6a0ede438f260743f34083fcd46c2efe808")
-
 # get all species for each genus from ncbi
 families_species <- unique(phoradendron_host_taxonomy$hostGenus) %>% 
   purrr::map(function(x){
@@ -11,7 +9,7 @@ families_species <- unique(phoradendron_host_taxonomy$hostGenus) %>%
                        downto = "Species",
                        db = c("ncbi"), row = 1)
   })
-
+set.seed(seed = 1234)
 # get a sample of one species for each genus  
 families_species_sample <- families_species %>% purrr::map(function(x){
   if(nrow(x[[1]]) == 0 ){
