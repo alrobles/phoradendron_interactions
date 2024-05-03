@@ -19,7 +19,7 @@ need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
 # File description and steps:
 
 Download repository from GitHub at
-<https://anonymous.4open.science/r/phoradendron_interactions/> . The
+<https://anonymous.4open.science/r/phoradendron_interactions-FDDF>. The
 script directory contains src scripts (with helper functions) and
 numerated scripts. All the outputs of the scripts will appear in the
 *data* directory. In order to have replicability you need to run scripts
