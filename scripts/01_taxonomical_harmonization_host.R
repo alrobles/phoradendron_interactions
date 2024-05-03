@@ -10,7 +10,6 @@ host_genus <- phoradendron_host %>%
   
 host <- host_genus %>% distinct(genus) %>% pull()
 
-options(ENTREZ_KEY = "f6a0ede438f260743f34083fcd46c2efe808")
 
 db <- host %>% 
   purrr::map(function(x){
